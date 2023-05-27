@@ -1,6 +1,6 @@
 ﻿namespace tabuleiro
 {
-    internal class Tabuleiro
+    class Tabuleiro
     {
         public int linhas { get; set; }
         public int colunas { get; set; }
