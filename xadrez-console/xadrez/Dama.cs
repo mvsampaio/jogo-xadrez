@@ -19,7 +19,7 @@ namespace xadrez
             return p == null || p.cor != cor;
         }
 
-        public override bool[,] movimentosPosiveis()
+        public override bool[,] movimentosPossiveis()
         {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
 
@@ -34,7 +34,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha, posicao.coluna - 1);                
+                pos.definirValores(pos.linha, pos.coluna - 1);                
             }
             //direita
             pos.definirValores(posicao.linha, posicao.coluna + 1);
@@ -45,7 +45,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha, posicao.coluna + 1);
+                pos.definirValores(pos.linha, pos.coluna + 1);
             }
             //acima
             pos.definirValores(posicao.linha - 1, posicao.coluna);
@@ -56,7 +56,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha - 1, posicao.coluna);
+                pos.definirValores(pos.linha - 1, pos.coluna);
             }
             //abaixo
             pos.definirValores(posicao.linha + 1, posicao.coluna);
@@ -67,7 +67,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha + 1, posicao.coluna);
+                pos.definirValores(pos.linha + 1, pos.coluna);
             }
             // NO
             pos.definirValores(posicao.linha - 1, posicao.coluna -1);
@@ -78,7 +78,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha - 1, posicao.coluna - 1);
+                pos.definirValores(pos.linha - 1, pos.coluna - 1);
             }
             // NE
             pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
@@ -89,7 +89,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha - 1, posicao.coluna + 1);
+                pos.definirValores(pos.linha - 1, pos.coluna + 1);
             }
             // SE
             pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
@@ -100,7 +100,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha + 1, posicao.coluna + 1);
+                pos.definirValores(pos.linha + 1, pos.coluna + 1);
             }
             // SO
             pos.definirValores(posicao.linha + 1, posicao.coluna - 1);
@@ -111,7 +111,7 @@ namespace xadrez
                 {
                     break;
                 }
-                pos.definirValores(posicao.linha + 1, posicao.coluna - 1);
+                pos.definirValores(pos.linha + 1, pos.coluna - 1);
             }
 
             return mat;

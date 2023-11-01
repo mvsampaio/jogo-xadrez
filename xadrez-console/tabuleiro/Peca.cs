@@ -27,7 +27,7 @@
 
         public bool existeMovimentosPossiveis()
         {
-            bool[,] mat = movimentosPosiveis();
+            bool[,] mat = movimentosPossiveis();
             for (int i = 0; i < tab.linhas; i++)
             {
                 for (int j = 0; j < tab.colunas; j++)
@@ -43,9 +43,9 @@
 
         public bool movimentoPossivel(Posicao pos)
         {
-            return movimentosPosiveis()[pos.linha, pos.coluna];
+            return movimentosPossiveis()[pos.linha, pos.coluna];
         }
 
-        public abstract bool[,] movimentosPosiveis();        
+        public abstract bool[,] movimentosPossiveis();        
     }
 }
